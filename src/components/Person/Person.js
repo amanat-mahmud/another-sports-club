@@ -3,13 +3,13 @@ import './Person.css';
 import Personimage from '../../images/person.jpg'
 const Person = (props) => {
     const {time} = props;
-    const [breakTime, setBreakTime] = useState(0);
+    const [breakTime, setBreakTime] = useState(localStorage.getItem('break-time'));
     const SelectedTime = (time) =>{
         localStorage.setItem('break-time',time);
         // console.log(localStorage.getItem('break-time'));
         // const setTime = localStorage.getItem('break-time');
         setBreakTime(localStorage.getItem('break-time'));
-
+        // useEffect(()=>{},[]) did not work
         
     };
     return (

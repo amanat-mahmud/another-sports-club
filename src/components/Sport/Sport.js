@@ -13,7 +13,7 @@ const Sport = (props) => {
                 <h4>Cost:${price}</h4>
             </div>
             <button className='added-btn' onClick={()=> addDuration(time)}>
-                Added
+                Add to Game
             </button>
         </div>
     );
