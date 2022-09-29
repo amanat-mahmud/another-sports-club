@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Sport from '../Sport/Sport';
 import './Sports.css'
-const Sports = () => {
+const Sports = (props) => {
     const [sports,setSports] = useState([]);
     useEffect(()=>{
         fetch('data.json')
@@ -14,6 +14,7 @@ const Sports = () => {
                 sports.map(sport=> <Sport 
                 key={sport.id}
                 sport = {sport}
+                addDuration = {props.addDuration}
                 ></Sport>)
             }
         </div>

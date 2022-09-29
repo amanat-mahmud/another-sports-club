@@ -1,3 +1,6 @@
 .person-container{
     margin-top: 0;
 }
+.person-container h3{
+    margin: 0;
+}

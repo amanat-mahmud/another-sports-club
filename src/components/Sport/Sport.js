@@ -3,6 +3,7 @@ import './Sport.css'
 const Sport = (props) => {
     const {img,price,name,time} = props.sport;
     // console.log(img,price,name,time)
+    const addDuration = props.addDuration;
     return (
         <div className='sport-container'>
             <img src={img} alt="" />
@@ -11,7 +12,7 @@ const Sport = (props) => {
                 <p>Duration:{time} minutes</p>
                 <h4>Cost:${price}</h4>
             </div>
-            <button className='added-btn'>
+            <button className='added-btn' onClick={addDuration}>
                 Added
             </button>
         </div>
