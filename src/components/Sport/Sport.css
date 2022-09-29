@@ -1,0 +1,34 @@
+.sport-container{
+    width: 280px;
+    height: 345px;
+    border: 1px solid gray;
+    position: relative;
+}
+.sport-container img{
+    width: 100%;
+    height: 50%;
+}
+.sport-info{
+    margin-left:10px;
+    margin-top: 20px;
+}
+.sport-info h3{
+    margin: 0;
+}
+.sport-info p{
+    margin: 0;
+}
+.sport-info h4{
+    margin: 0;
+}
+.added-btn{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    border: none;
+    background-color: #ffb800;
+}
+.added-btn:hover{
+    background-color: gold;
+}

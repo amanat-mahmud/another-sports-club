@@ -3,7 +3,7 @@
         "id":"1",
         "name":"Cricket",
         "img":"https://images.unsplash.com/photo-1531415074968-036ba1b575da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1467&q=80",
-        "time": "120 Min",
+        "time": "120",
         "age": "15-40",
         "price": "500"
     },
@@ -11,7 +11,7 @@
         "id":"2",
         "name":"Football",
         "img":"https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80",
-        "time": "90 Min",
+        "time": "90",
         "age": "20-40",
         "price": "300"
     },
@@ -19,7 +19,7 @@
         "id":"3",
         "name":"Badminton",
         "img":"https://images.unsplash.com/photo-1626721105368-a69248e93b32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        "time": "40 Min",
+        "time": "40",
         "age": "18-40",
         "price": "250"
     },
@@ -27,7 +27,7 @@
         "id":"4",
         "name":"Voleyball",
         "img":"https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1307&q=80",
-        "time": "70 Min",
+        "time": "70",
         "age": "25-40",
         "price": "350"
     },
@@ -35,7 +35,7 @@
         "id":"5",
         "name":"Basketball",
         "img":"https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1490&q=80",
-        "time": "50 Min",
+        "time": "50",
         "age": "25-35",
         "price": "150"
     },
@@ -43,7 +43,7 @@
         "id":"6",
         "name":"Swimming",
         "img":"https://images.unsplash.com/photo-1558617320-e695f0d420de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        "time": "30 Min",
+        "time": "30",
         "age": "10-37",
         "price": "100"
     }
