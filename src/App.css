@@ -46,3 +46,6 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
+.blog-container{
+  margin-top: 150px;
+}
