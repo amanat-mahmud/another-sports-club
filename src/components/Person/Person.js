@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Person.css';
 import Personimage from '../../images/person.jpg'
 const Person = (props) => {
     const {time} = props;
+    const [breakTime, setBreakTime] = useState(0);
+    const SelectedTime = (time) =>{
+        setBreakTime(time);
+    }
     return (
         <div className='person-container'>
             <div className='person-info-top'>
@@ -18,8 +22,30 @@ const Person = (props) => {
                     </div>
                 </div>
             </div>
-            <h3>Person</h3>
-            <h3>Game Duration:{time}</h3>
+            <div className='person-info-bottom'>
+                <div>
+                    <h2>25</h2>
+                    <p>Age</p>
+                </div>
+                <div>
+                    <h2>6ft</h2>
+                    <p>Height</p>
+                </div>
+                <div>
+                    <h2>80</h2>
+                    <p>Weight</p>
+                </div>
+            </div>
+            <h2>Break time</h2>
+            <div className='btn-container'>
+                <button className='brk-btn' onClick={()=>SelectedTime(5)}>5</button>
+                <button className='brk-btn'onClick={()=>SelectedTime(10)}>10</button>
+                <button className='brk-btn'onClick={()=>SelectedTime(15)}>15</button>
+                <button className='brk-btn'onClick={()=>SelectedTime(20)}>20</button>
+                <button className='brk-btn'onClick={()=>SelectedTime(30)}>30</button>
+            </div>
+            <h3>Game Duration: {time} minutes</h3>
+            <h3>Break Time: {breakTime} minutes</h3>
         </div>
     );
 };

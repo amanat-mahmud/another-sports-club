@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import Person from './components/Person/Person';
 import Sports from './components/Sports/Sports';
 function App() {
-  const [time, setTime] = useState([]);
+  const [time, setTime] = useState(0);
   const addDuration =(selectedTime) =>{
     setTime(selectedTime);
   }
