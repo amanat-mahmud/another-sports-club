@@ -48,7 +48,7 @@
     border: none;
     font-size: 20px;
 }
-.brk-btn:hover{
+.brk-btn:focus{
     background-color: lightslategray;
 }
 .game-btn{
@@ -60,7 +60,7 @@
     border: none;
     background-color: lightgray;
 }
-.game-btn:hover{
+.game-btn:focus{
     background-color: lightslategray
 }
 

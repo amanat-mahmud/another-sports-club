@@ -6,7 +6,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Person = (props) => {
     const {time} = props;
-    const [breakTime, setBreakTime] = useState(localStorage.getItem('break-time'));
+    let timeLocal = localStorage.getItem('break-time');
+    if(timeLocal===null){
+        timeLocal = 0;
+    }
+    const [breakTime, setBreakTime] = useState(timeLocal);
     const SelectedTime = (time) =>{
         localStorage.setItem('break-time',time);
         // console.log(localStorage.getItem('break-time'));
