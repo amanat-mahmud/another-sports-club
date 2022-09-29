@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './Person.css';
-import Personimage from '../../images/person.jpg'
+import Personimage from '../../images/person.jpg';
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 const Person = (props) => {
     const {time} = props;
     const [breakTime, setBreakTime] = useState(localStorage.getItem('break-time'));
@@ -12,12 +15,13 @@ const Person = (props) => {
         // useEffect(()=>{},[]) did not work
         
     };
+    const notify = () => toast("Congrats!!!Completed a game");
     return (
         <div className='person-container'>
             <div className='person-info-top'>
                 <img src={Personimage} alt="person"/>
                 <div className='person-name-location'>
-                    <p>Amanat</p>
+                    <p>Kōichi Sakakibara</p>
                     <div className='location'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -51,6 +55,8 @@ const Person = (props) => {
             </div>
             <h3>Game Duration: {time} minutes</h3>
             <h3>Break Time: {breakTime} minutes</h3>
+            <button className='game-btn' onClick={notify}>Game Completed</button>
+            <ToastContainer/>
         </div>
     );
 };

@@ -28,6 +28,7 @@
     bottom: 0;
     border: none;
     background-color: #ffb800;
+    font-size: 18px;
 }
 .added-btn:hover{
     background-color: gold;
