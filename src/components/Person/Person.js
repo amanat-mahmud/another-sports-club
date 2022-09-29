@@ -5,8 +5,13 @@ const Person = (props) => {
     const {time} = props;
     const [breakTime, setBreakTime] = useState(0);
     const SelectedTime = (time) =>{
-        setBreakTime(time);
-    }
+        localStorage.setItem('break-time',time);
+        // console.log(localStorage.getItem('break-time'));
+        // const setTime = localStorage.getItem('break-time');
+        setBreakTime(localStorage.getItem('break-time'));
+
+        
+    };
     return (
         <div className='person-container'>
             <div className='person-info-top'>
