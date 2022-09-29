@@ -4,3 +4,23 @@
 .person-container h3{
     margin: 0;
 }
+.person-info-top{
+    display: flex;
+}
+.person-info-top img{
+    width: 50px;
+    border-radius: 50%;
+}
+.person-name-location{
+    margin-left: 10px;
+}
+.person-name-location p{
+    margin: 0;
+}
+.person-name-location svg{
+    width: 10%;
+}
+.location{
+    display: flex;
+    align-items: center;
+}
