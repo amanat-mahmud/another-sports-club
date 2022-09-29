@@ -12,7 +12,7 @@ const Sport = (props) => {
                 <p>Duration:{time} minutes</p>
                 <h4>Cost:${price}</h4>
             </div>
-            <button className='added-btn' onClick={addDuration}>
+            <button className='added-btn' onClick={()=> addDuration(time)}>
                 Added
             </button>
         </div>

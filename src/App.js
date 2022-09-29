@@ -1,10 +1,12 @@
+import { useState } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Person from './components/Person/Person';
 import Sports from './components/Sports/Sports';
 function App() {
-  const addDuration =() =>{
-    console.log('Clicked')
+  const [time, setTime] = useState([]);
+  const addDuration =(selectedTime) =>{
+    setTime(selectedTime);
   }
   return (
     <div>
@@ -12,7 +14,7 @@ function App() {
       <h1 className='space'>Select what you want to play</h1>
       <div className='SportsAndCartContainer'>
         <Sports addDuration={addDuration}></Sports>
-        <Person></Person>
+        <Person time={time}></Person>
       </div>
     </div>
   );
